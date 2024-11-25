@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
-  </head>
+function createLoginModal() {
+  const modal = document.createElement("div");
+  modal.id = "login-modal"
+  modal.className = "modal"
 
-  <body>
+  modal.innerHTML = `
     <div class="loginModalContent">
       <span class="close">&times;</span>
       <div>
@@ -29,6 +26,28 @@
         <button type="submit">Créer un compte</button>
       </div>
     </div>
-  </body>
+  `;
 
-</html>
+  document.body.appendChild(modal);
+
+  const closeModalButton = modal.querySelector(".close");
+  closeModalButton.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  window.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+}
+
+function bindModalToLink() {
+  const loginLink = document.getElementById("login-link");
+  if (loginLink) {
+    loginLink.addEventListener("click", () => {
+      const modal = document.getElementById("login-modal");
+      modal.style.display = "flex";
+    });
+  }
+}

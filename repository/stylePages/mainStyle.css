@@ -21,7 +21,7 @@ header, footer{
     #555555 100%    /* Couleur en bas */
   );
   font-family: "Bebas Neue", sans-serif;
-  font-size: 2vw;
+  font-size: 2.5vw;
 }
 
 .banner-container {
@@ -77,6 +77,7 @@ header li {
 
 .footerDiv h4 {
   color: white;
+  font-size: 2vw;
   text-decoration: underline;
   margin: 0;
   padding: 0;
@@ -94,3 +95,6 @@ header li {
   text-decoration: none;
 }
 
+.footerDiv ul a:hover {
+  text-decoration: underline;
+}

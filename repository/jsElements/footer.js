@@ -5,7 +5,7 @@ export function createFooter() {
       <div class="footerColumn1">
         <h4>DofusGroup</h4>
         <ul>
-          <li><a href="">Accueil</a></li>
+          <li><a href="index.html">Accueil</a></li>
           <li><a href="">Recherche de groupe</a></li>
           <li><a href="">Création de groupe</a></li>
           <li><a href="">Compte</a></li>
