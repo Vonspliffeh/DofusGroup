@@ -1,0 +1,87 @@
+.modal {
+  margin: 0;
+  padding: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.loginModalContent {
+  width: 50%;
+  height: auto;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.connexionDiv {
+  width: 50%;
+  margin: 0;
+  padding: 5% 10%;
+  background-color: white;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  padding: 5% 0% 2% 0%;
+}
+
+a {
+  padding: 2% 0% 10% 0%;
+}
+
+.boutonConnexion {
+  padding: 5% 0%;
+}
+
+.inscriptionDiv {
+  width: 50%;
+  margin: 0;
+  padding: 5% 10%;
+  color: white;
+  background: linear-gradient(
+    to top, 
+    #555555 0%,     /* Couleur en haut */
+    #404040 15%,    /* Couleur entre le centre et le haut */
+    #353535 50%,    /* Couleur centrale */
+    #404040 85%,    /* Couleur entre le centre et le bas */
+    #555555 100%    /* Couleur en bas */
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.boutonCreation {
+  width: 100%;
+  padding: 5% 0%;
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}

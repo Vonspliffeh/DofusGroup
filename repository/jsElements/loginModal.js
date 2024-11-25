@@ -1,12 +1,12 @@
-function createLoginModal() {
+export function createLoginModal() {
   const modal = document.createElement("div");
   modal.id = "login-modal"
   modal.className = "modal"
 
   modal.innerHTML = `
     <div class="loginModalContent">
-      <span class="close">&times;</span>
-      <div>
+      <div class='connexionDiv'>
+      <span class="close">&times;</span>  
         <h2>Connexion</h2>
         <form id="login-form" action="/submit_login" method="POST">
           <label for="email">Email :</label>
@@ -16,14 +16,14 @@ function createLoginModal() {
           <input type="password" name="password" id="password" placeholder="Entrez votre mot de passe" required>
           <a href="">Mot de passe oublié</a>
 
-          <button type="submit">Se connecter</button>
+          <button class="boutonConnexion" type="submit">Se connecter</button>
         </form>
       </div>
-      <div>
+      <div class='inscriptionDiv'>
         <h2>Inscription</h2>
         <h3>Pas de compte DofusGroup?</h3>
         <p>Rejoind nous pour profiter de l'ensemble des fonctionnalités de DofusGroup!</p>
-        <button type="submit">Créer un compte</button>
+        <button class="boutonCreation" type="submit">Créer un compte</button>
       </div>
     </div>
   `;
@@ -42,10 +42,12 @@ function createLoginModal() {
   });
 }
 
-function bindModalToLink() {
+export function bindModalToLink() {
   const loginLink = document.getElementById("login-link");
+
   if (loginLink) {
     loginLink.addEventListener("click", () => {
+
       const modal = document.getElementById("login-modal");
       modal.style.display = "flex";
     });
