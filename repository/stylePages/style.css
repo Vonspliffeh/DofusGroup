@@ -27,7 +27,7 @@ header, footer{
 .banner-container {
   width: 100%;
   height: 15%;
-  background-image: url(./images/Illu_Protecteurs_Mois.png);
+  background-image: url(../images/Illu_Protecteurs_Mois.png);
   background-size: cover;
   background-position: center 45%;
 }
