@@ -45,7 +45,7 @@ header a:visited, footer a:visited {
   text-decoration: none;
 }
 
-ul {
+header ul {
   width: 100vw;
   margin: 0;
   padding: 0vw 10vw 0vw 10vw;
@@ -65,3 +65,32 @@ header li {
 .logoNavbar {
   max-width: 100%;
 }
+
+.footerDiv {
+  width: 100vw;
+  margin: 0;
+  padding: 0vw 10vw 0vw 10vw;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.footerDiv h4 {
+  color: white;
+  text-decoration: underline;
+  margin: 0;
+  padding: 0;
+}
+
+.footerDiv ul {
+  font-size: 1.5vw;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: left;
+}
+
+.footerDiv ul a {
+  text-decoration: none;
+}
+
