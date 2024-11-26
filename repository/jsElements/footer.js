@@ -8,7 +8,7 @@ export function createFooter() {
           <li><a href="index.html">Accueil</a></li>
           <li><a href="">Recherche de groupe</a></li>
           <li><a href="">Création de groupe</a></li>
-          <li><a href="">Compte</a></li>
+          <li><a href="#" class="lienCompte">Compte</a></li>
         </ul>
       </div>
       <div class="footerColumn2">

@@ -47,16 +47,16 @@ export function createLoginModal() {
 }
 
 export function bindModalToLink() {
-  const loginLink = document.getElementById("login-link");
-
-  if (loginLink) {
-    loginLink.addEventListener("click", (event) => {
+  const liensCompte = document.querySelectorAll('.lienCompte');
+  liensCompte.forEach(lienCompte => {
+    lienCompte.addEventListener("click", (event) => {
       event.preventDefault()
+      
       const modal = document.getElementById("login-modal");
       const overlay = document.getElementById("modal-overlay")
-
+  
       modal.style.display = "flex";
       overlay.style.display = "block"
     });
-  }
+  });
 }
