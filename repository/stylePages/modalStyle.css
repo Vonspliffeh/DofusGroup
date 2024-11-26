@@ -1,19 +1,31 @@
-.modal {
+#modal-overlay {
+  position: fixed;
   margin: 0;
   padding: 0;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
   display: none;
-  justify-content: center;
-  align-items: center;
+  z-index: 10;
+}
+
+#login-modal {
+  position: fixed;
+  left: 25vw;
+  display: none;
+  z-index: 20;
 }
 
 
 .loginModalContent {
-  width: 50%;
-  height: auto;
-  position: relative;
   display: flex;
+  margin: 0;
+  padding: 0;
+  width: 50vw;
+  height: auto;
   justify-content: space-around;
-
 }
 
 h2 {

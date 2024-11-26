@@ -1,4 +1,7 @@
 export function createLoginModal() {
+  const overlay = document.createElement("div");
+  overlay.id = "modal-overlay";
+
   const modal = document.createElement("div");
   modal.id = "login-modal"
   modal.className = "modal"
@@ -28,17 +31,18 @@ export function createLoginModal() {
     </div>
   `;
 
+  document.body.appendChild(overlay);
   document.body.appendChild(modal);
 
   const closeModalButton = modal.querySelector(".close");
   closeModalButton.addEventListener("click", () => {
+    overlay.style.display = "none";
     modal.style.display = "none";
   });
 
-  window.addEventListener("click", (event) => {
-    if (event.target === modal) {
-      modal.style.display = "none";
-    }
+  overlay.addEventListener("click", (event) => {
+    overlay.style.display = "none";
+    modal.style.display = "none";
   });
 }
 
@@ -46,10 +50,13 @@ export function bindModalToLink() {
   const loginLink = document.getElementById("login-link");
 
   if (loginLink) {
-    loginLink.addEventListener("click", () => {
-
+    loginLink.addEventListener("click", (event) => {
+      event.preventDefault()
       const modal = document.getElementById("login-modal");
+      const overlay = document.getElementById("modal-overlay")
+
       modal.style.display = "flex";
+      overlay.style.display = "block"
     });
   }
 }
