@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Tourney:ital,wght@0,400;0,600;1,200&display=swap');
+
 #modal-overlay {
   position: fixed;
   margin: 0;
@@ -12,9 +14,14 @@
 }
 
 #login-modal {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.2em;
   position: fixed;
-  left: 25vw;
+  left: 17.5%;
   display: none;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
   z-index: 20;
 }
 
@@ -23,7 +30,7 @@
   display: flex;
   margin: 0;
   padding: 0;
-  width: 50vw;
+  width: 65vw;
   height: auto;
   justify-content: space-around;
 }
@@ -31,22 +38,28 @@
 h2 {
   margin: 0;
   padding: 0;
+  font-size: 2em;
 }
 
 h3 {
   margin: 0;
   padding: 0;
+  font-size: 1.5em;
 }
 
 .connexionDiv {
   width: 50%;
   margin: 0;
   padding: 5% 10%;
-  background-color: white;
-  justify-content: center;
+  background-color: rgb(171, 172, 154);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 form {
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -55,12 +68,57 @@ label {
   padding: 5% 0% 2% 0%;
 }
 
+input {
+  padding: 2% 0%;
+  border: none;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: 3px solid #7ea10b;
+}
+
 a {
   padding: 2% 0% 10% 0%;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#login-modal button {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1em;
 }
 
 .boutonConnexion {
-  padding: 5% 0%;
+  width: 80%;
+  margin: 0% 10%;
+  text-decoration: none;
+  padding: 15px;
+  font-family: arial;
+  font-size: 1em;
+  color: #323230;
+  background: radial-gradient(circle, #7ea10b 75%, #bcd804 99%, #e2e117 100%);
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border: none;
+  box-shadow: 3px 3px 10px #262626;
+  -webkit-box-shadow: 3px 3px 10px #262626;
+  -moz-box-shadow: 3px 3px 10px #262626;
+}
+
+.boutonConnexion:hover {
+  padding: 10px;
+  box-shadow: 0px 0px 3px #262626;
+  -webkit-box-shadow: 0px 0px 3px #262626;
+  -moz-box-shadow: 0px 0px 3px #262626;
 }
 
 .inscriptionDiv {
@@ -78,14 +136,9 @@ a {
   );
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
-}
-
-.boutonCreation {
-  width: 100%;
-  padding: 5% 0%;
 }
 
 .close {
@@ -97,3 +150,28 @@ a {
   color: white;
   cursor: pointer;
 }
+
+.boutonCreation {
+  width: 80%;
+  text-decoration: none;
+  padding: 15px;
+  font-family: arial;
+  font-size: 1em;
+  color: #323230;
+  background: radial-gradient(circle, #7ea10b 70%, #bcd804 99%, #e2e117 100%);
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border: none;
+  box-shadow: 3px 3px 10px #d8d8d8;
+  -webkit-box-shadow: 3px 3px 10px #d8d8d8;
+  -moz-box-shadow: 3px 3px 10px #d8d8d8;
+  }
+  
+  
+.boutonCreation:hover {
+  padding: 5% 20%;
+  box-shadow: 0px 0px 3px #d8d8d8;
+  -webkit-box-shadow: 0px 0px 3px #d8d8d8;
+  -moz-box-shadow: 0px 0px 3px #d8d8d8;
+  }
