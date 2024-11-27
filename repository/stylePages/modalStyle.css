@@ -26,6 +26,18 @@
   z-index: 20;
 }
 
+#accountModalId {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.2em;
+  background-color: rgb(171, 172, 154);
+  position: fixed;
+  display: none;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  z-index: 30;
+}
+
 .loginModalContent {
   display: flex;
   margin: 0;
@@ -33,6 +45,17 @@
   width: 65vw;
   height: auto;
   justify-content: space-around;
+}
+
+.accountCreationDiv {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 35vw;
+  height: auto;
+  justify-content: space-around;
+  align-items: center;
 }
 
 h2 {
@@ -140,13 +163,23 @@ button {
   text-align: center;
 }
 
-.close {
+.loginModalContent .close {
   position: absolute;
   top: 5px;
   right: 15px;
   font-size: 24px;
   font-weight: bold;
   color: white;
+  cursor: pointer;
+}
+
+.accountCreationDiv .close {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
   cursor: pointer;
 }
 

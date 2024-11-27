@@ -1,4 +1,4 @@
-import { openModal, bindCloseModal, bindModalToLinks } from "./modalManager.js";
+import { bindModalToLinks, switchToAccountModal, bindCloseModal } from "./modalManager.js";
 
 export function createLoginModal() {
   const overlay = document.createElement("div");
@@ -28,7 +28,7 @@ export function createLoginModal() {
         <h2>Inscription</h2>
         <h3>Pas de compte DofusGroup?</h3>
         <p>Rejoind nous pour profiter de l'ensemble des fonctionnalités de DofusGroup!</p>
-        <button class="boutonCreation" type="submit">Créer un compte</button>
+        <button class="boutonCreation" data-modal="accountModalId" type="submit">Créer un compte</button>
       </div>
     </div>
   `;
@@ -36,6 +36,12 @@ export function createLoginModal() {
   document.body.appendChild(overlay);
   document.body.appendChild(modal);
 
-  bindModalToLinks('.lienCompte', 'loginModalId', 'ModalOverlayId');
+  const openAccountModalButton = modal.querySelector(".boutonCreation");
+  openAccountModalButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    switchToAccountModal();
+  });
+
+  bindModalToLinks('.lienCompte', 'loginModalId', 'modalOverlayId')
   bindCloseModal('loginModalId', 'modalOverlayId');
 }

@@ -18,6 +18,11 @@ export function closeModal(modalId, overlayId) {
   };
 }
 
+export function switchToAccountModal() {
+  closeModal('loginModalId', 'modalOverlayId');
+  openModal('accountModalId', 'modalOverlayId');
+}
+
 export function bindModalToLinks(linkSelector, modalId, overlayId) {
   const links = document.querySelectorAll(linkSelector);
   console.log(`Nombre de liens trouvés pour "${linkSelector}":`, links.length);
@@ -28,20 +33,9 @@ export function bindModalToLinks(linkSelector, modalId, overlayId) {
       event.preventDefault();
       const modalId = link.getAttribute('data-modal');
       console.log(`Lien cliqué. Ouverture de la modale : ${modalId}`);
-      openModal(modalId, 'modalOverlayId');
-    });
-  });
-}
-
-export function bindModalToButton(buttonSelector, modalId, overlayId) {
-  const button = document.querySelector(buttonSelector);
-  if (button) {
-    button.addEventListener("click", (event) => {
-      event.preventDefault();
-      console.log(`Lien cliqué. Ouverture de la modale : ${modalId}`);
       openModal(modalId, overlayId);
     });
-  };
+  });
 }
 
 export function bindCloseModal(modalId, overlayId) {

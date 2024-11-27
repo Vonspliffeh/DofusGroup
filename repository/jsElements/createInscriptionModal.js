@@ -1,10 +1,7 @@
-import { bindModalToButton, bindCloseModal } from "./modalManager.js";
+import { bindModalToLinks, bindCloseModal } from "./modalManager.js";
 
 export function createInscriptionModal() {
-  const overlay = document.createElement("div");
-  overlay.id = "modalOverlayId";
-
-  const modal = document.createElement("div");
+   const modal = document.createElement("div");
   modal.id = "accountModalId";
   modal.className = "accountModal";
 
@@ -32,9 +29,8 @@ export function createInscriptionModal() {
     </div>
   `;
 
-  document.body.appendChild(overlay);
   document.body.appendChild(modal);
 
-  bindModalToButton('.boutonCreation', 'accountModalId', 'modalOverlayId');
+  bindModalToLinks('.boutonCreation', 'accountModalId', 'modalOverlayId')
   bindCloseModal('accountModalId', 'modalOverlayId');
 }
