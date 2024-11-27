@@ -1,17 +1,19 @@
+import { openModal, bindCloseModal, bindModalToLinks } from "./modalManager.js";
+
 export function createLoginModal() {
   const overlay = document.createElement("div");
-  overlay.id = "modal-overlay";
+  overlay.id = "modalOverlayId";
 
   const modal = document.createElement("div");
-  modal.id = "login-modal"
-  modal.className = "modal"
+    modal.id = "loginModalId";
+    modal.className = "loginModal";
 
-  modal.innerHTML = `
+    modal.innerHTML = `
     <div class="loginModalContent">
       <div class='connexionDiv'>
-      <span class="close">&times;</span>  
+        <span class="close">&times;</span>  
         <h2>Connexion</h2>
-        <form id="login-form" action="/submit_login" method="POST">
+        <form id="loginForm" action="/submit_login" method="POST">
           <label for="email">Email :</label>
           <input type="email" id="email" name="email" placeholder="Entrez votre adresse" required>
 
@@ -34,29 +36,6 @@ export function createLoginModal() {
   document.body.appendChild(overlay);
   document.body.appendChild(modal);
 
-  const closeModalButton = modal.querySelector(".close");
-  closeModalButton.addEventListener("click", () => {
-    overlay.style.display = "none";
-    modal.style.display = "none";
-  });
-
-  overlay.addEventListener("click", (event) => {
-    overlay.style.display = "none";
-    modal.style.display = "none";
-  });
-}
-
-export function bindModalToLink() {
-  const liensCompte = document.querySelectorAll('.lienCompte');
-  liensCompte.forEach(lienCompte => {
-    lienCompte.addEventListener("click", (event) => {
-      event.preventDefault()
-      
-      const modal = document.getElementById("login-modal");
-      const overlay = document.getElementById("modal-overlay")
-  
-      modal.style.display = "flex";
-      overlay.style.display = "block"
-    });
-  });
+  bindModalToLinks('.lienCompte', 'loginModalId', 'ModalOverlayId');
+  bindCloseModal('loginModalId', 'modalOverlayId');
 }

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Tourney:ital,wght@0,400;0,600;1,200&display=swap');
 
-#modal-overlay {
+#modalOverlayId {
   position: fixed;
   margin: 0;
   padding: 0;
@@ -13,7 +13,7 @@
   z-index: 10;
 }
 
-#login-modal {
+#loginModalId {
   font-family: "Bebas Neue", sans-serif;
   font-size: 1.2em;
   position: fixed;
@@ -25,7 +25,6 @@
   overflow: hidden;
   z-index: 20;
 }
-
 
 .loginModalContent {
   display: flex;
@@ -94,9 +93,13 @@ a:hover {
   text-decoration: underline;
 }
 
-#login-modal button {
+#loginModalId button {
   font-family: "Bebas Neue", sans-serif;
   font-size: 1em;
+}
+
+button {
+  cursor: pointer;
 }
 
 .boutonConnexion {
