@@ -3,7 +3,7 @@ export function createNavbar() {
   nav.innerHTML = `
     <ul class="navbar">
       <li><a href="index.html">Acceuil</a></li>
-      <li><a href="../htmlPages/groupe.html">Groupe</a></li>
+      <li><a href="../htmlPages/évènements.html">Évènements</a></li>
       <li><img class="logoNavbar" src="../images/logoDofus.webp" alt="logo Dofus"></li>
       <li><a href="../htmlPages/communauté.html">Communauté</a></li>
       <li><a href="#" class="lienCompte">Compte</a></li>

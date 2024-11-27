@@ -7,4 +7,4 @@ export function addBannerImage() {
   const header = document.querySelector('header');
 
   body.insertBefore(bannerContainer, header);
-}
+};
