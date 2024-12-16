@@ -16,9 +16,10 @@
 #loginModalId {
   font-family: "Bebas Neue", sans-serif;
   font-size: 1.2em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   position: fixed;
-  left: 17.5%;
-  bottom: 25%;
   display: none;
   border: none;
   border-radius: 15px;
@@ -30,6 +31,10 @@
   font-family: "Bebas Neue", sans-serif;
   font-size: 1.2em;
   background-color: rgb(171, 172, 154);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
   display: none;
   border: none;
   border-radius: 15px;
@@ -115,7 +120,7 @@ a:hover {
   text-decoration: underline;
 }
 
-#loginModalId button {
+#loginModalId button, #accountModalId button {
   font-family: "Bebas Neue", sans-serif;
   font-size: 1em;
 }
@@ -124,7 +129,7 @@ button {
   cursor: pointer;
 }
 
-.boutonConnexion {
+.boutonConnexion, .boutonValider {
   width: 80%;
   margin: 0% 10%;
   text-decoration: none;
@@ -138,7 +143,7 @@ button {
   box-shadow: 3px 3px 10px #262626;
 }
 
-.boutonConnexion:hover {
+.boutonConnexion:hover, .boutonValider:hover {
   box-shadow: 0px 0px 3px #262626;
 }
 
@@ -161,6 +166,15 @@ button {
   align-items: center;
   text-align: center;
 }
+
+.accountCreationDiv {
+  padding: 10% 10%;
+}
+
+.accountCreationDiv p {
+  padding: 2% 0% 10% 0%;
+}
+
 
 .loginModalContent .close {
   position: absolute;
