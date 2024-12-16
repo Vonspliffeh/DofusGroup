@@ -1,11 +1,11 @@
 import { bindModalToLinks, bindCloseModal } from "./modalManager.js";
 
 export function createInscriptionModal() {
-   const modal = document.createElement("div");
-  modal.id = "accountModalId";
-  modal.className = "accountModal";
+  const modal = document.createElement("div");
+    modal.id = "accountModalId";
+    modal.className = "accountModal";
 
-  modal.innerHTML = `
+    modal.innerHTML = `
     <div class="accountCreationDiv">
       <span class="close">&times;</span>
       <h2>Inscription</h2>

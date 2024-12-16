@@ -10,7 +10,7 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
-  z-index: 10;
+  z-index: 100;
 }
 
 #loginModalId {
@@ -23,19 +23,18 @@
   border: none;
   border-radius: 15px;
   overflow: hidden;
-  z-index: 20;
+  z-index: 110;
 }
 
 #accountModalId {
   font-family: "Bebas Neue", sans-serif;
   font-size: 1.2em;
   background-color: rgb(171, 172, 154);
-  position: fixed;
   display: none;
   border: none;
   border-radius: 15px;
   overflow: hidden;
-  z-index: 30;
+  z-index: 120;
 }
 
 .loginModalContent {

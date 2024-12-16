@@ -1,9 +1,6 @@
-import { bindModalToLinks, switchToAccountModal, bindCloseModal } from "./modalManager.js";
+import { bindModalToLinks, switchModal, bindCloseModal } from "./modalManager.js";
 
 export function createLoginModal() {
-  const overlay = document.createElement("div");
-  overlay.id = "modalOverlayId";
-
   const modal = document.createElement("div");
     modal.id = "loginModalId";
     modal.className = "loginModal";
@@ -33,13 +30,12 @@ export function createLoginModal() {
     </div>
   `;
 
-  document.body.appendChild(overlay);
   document.body.appendChild(modal);
 
   const openAccountModalButton = modal.querySelector(".boutonCreation");
   openAccountModalButton.addEventListener('click', (event) => {
     event.preventDefault();
-    switchToAccountModal();
+    switchModal('loginModalId', 'accountModalId', 'modalOverlayId');
   });
 
   bindModalToLinks('.lienCompte', 'loginModalId', 'modalOverlayId')
