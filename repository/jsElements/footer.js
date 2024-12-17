@@ -23,7 +23,7 @@ export function createFooter() {
         <h4>Autres liens</h4>
         <ul>
           <li><a href="">Contact</a></li>
-          <li><a href="">Conditions d'utilisation</a></li>
+          <li><a href="CGU.html">Conditions d'utilisation</a></li>
           <li><a href="">Politique de confidentialité</a></li>
           <li><a href="">Reporter un bug</a></li>
         </ul>

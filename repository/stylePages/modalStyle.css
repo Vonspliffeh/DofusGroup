@@ -24,6 +24,7 @@
   border: none;
   border-radius: 15px;
   overflow: hidden;
+  box-shadow: 4px 4px 10px #262626;
   z-index: 110;
 }
 
@@ -39,6 +40,7 @@
   border: none;
   border-radius: 15px;
   overflow: hidden;
+  box-shadow: 4px 4px 10px #262626;
   z-index: 120;
 }
 
