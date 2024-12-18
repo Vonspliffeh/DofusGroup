@@ -1,0 +1,19 @@
+{
+  "name": "dofusgroup",
+  "version": "1.0.0",
+  "description": "Web site for create team to play Dofus",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2"
+  },
+  "nodemonConfig": {
+    "ext": "js, html, css"
+  }
+}
