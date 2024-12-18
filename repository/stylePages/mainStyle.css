@@ -14,7 +14,22 @@ html, body {
   overflow-x: hidden;
 }
 
-header, footer{
+main {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/paysage-tofu.jpg);
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: auto;
+  z-index: 50;
+}
+
+header, footer {
   width: 100%;
   margin: 0;
   padding: 0;
@@ -27,6 +42,7 @@ header, footer{
     #555555 100%    /* Couleur en bas */
   );
   font-family: "Bebas Neue", sans-serif;
+  position: relative;
   font-size: 2.5vw;
 }
 

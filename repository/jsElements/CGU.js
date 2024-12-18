@@ -1,7 +1,8 @@
 export function createCGUPage() {
   const CGUPage = document.createElement('section');
   CGUPage.innerHTML = `
-  <h1>Conditions Générales d'Utilisation de DofusGroup</h1>
+  <div class="CGUDiv">
+    <h1>Conditions Générales d'Utilisation de DofusGroup</h1>
       <h2>1. Présentation des CGU</h2>
         <p>DofusGroup est un fan-site proposé à l'adresse https://www.dofusgroup.net (le " Site ") basé sur l'univers du jeu DOFUS (le " Jeu "),
         jeu appartenant à la société Ankama Games. DofusGroup fournit un ensemble de services (le " Service ") permettant de créer des évènements collaboratifs en jeu,
@@ -188,7 +189,8 @@ export function createCGUPage() {
   
       <h2>15.Divers</h2>
         <p>L'ensemble des CGU est gouverné et interprété conformément à la loi française, à l'exception des conditions plus favorables prévues par les lois de votre pays de résidence.</p>
-        <p>Si l'une des conditions ou termes de cet Accord était considéré comme illégal, invalide ou inapplicable au regard d'une loi nationale, cette condition ou terme sera supprimé sans préjudice de l'application des autres dispositions.</p> 
+        <p>Si l'une des conditions ou termes de cet Accord était considéré comme illégal, invalide ou inapplicable au regard d'une loi nationale, cette condition ou terme sera supprimé sans préjudice de l'application des autres dispositions.</p>
+  </div> 
   `;
   document.querySelector('main').appendChild(CGUPage);
 }
