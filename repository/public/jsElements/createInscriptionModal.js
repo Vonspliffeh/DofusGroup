@@ -22,7 +22,7 @@ export function createInscriptionModal() {
         <label for="password">Mot de passe :</label>
         <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirmez votre mot de passe" required>
         
-        <p>En validant ton inscription, tu acceptes les <a href="">CGU</a> et la <a href="">politique de confidentialité</a>.</p>
+        <p>En validant ton inscription, tu acceptes les <a href="../htmlPages/CGU.html">CGU</a> et la <a href="../htmlPages/confidentialité.html">politique de confidentialité</a>.</p>
 
         <button class="boutonValider" type="submit">Valider</button>
       </form>

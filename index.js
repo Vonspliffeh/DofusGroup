@@ -11,6 +11,11 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'repository', 'public', 'htmlPages', 'index.html'));
 });
 
+// Gestion des erreurs 404
+app.use((req, res, next) => {
+  res.status(404).send('Page non trouvée.');
+});
+
 // Lancer le serveur
 app.listen(port, () => {
   console.log(`Serveur en écoute sur le port ${port}`);

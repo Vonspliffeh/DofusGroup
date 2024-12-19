@@ -7,7 +7,7 @@ section {
   justify-content: space-around;
 }
 
-.CGUDiv {
+.CGUDiv, .confidentDiv {
   text-align: justify;
   width: 90%;
   height: auto;
@@ -45,7 +45,7 @@ p {
   font-weight: 450;
 }
 
-.CGUDiv ul {
+.CGUDiv ul, .confidentDiv ul {
   margin-left: 5%;
   font-family: "Roboto Serif", serif;
   font-weight: 450;

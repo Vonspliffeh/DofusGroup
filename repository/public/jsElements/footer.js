@@ -24,7 +24,7 @@ export function createFooter() {
         <ul>
           <li><a href="">Contact</a></li>
           <li><a href="CGU.html">Conditions d'utilisation</a></li>
-          <li><a href="">Politique de confidentialité</a></li>
+          <li><a href="../htmlPages/confidentialité.html">Politique de confidentialité</a></li>
           <li><a href="">Reporter un bug</a></li>
         </ul>
       </div>
